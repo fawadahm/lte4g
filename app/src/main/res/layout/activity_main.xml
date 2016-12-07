@@ -9,36 +9,69 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.nsl.lteapp.MainActivity">
 
+
+
     <TextView
-        android:id="@+id/Title"
+        android:id="@+id/AppVersion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sender App" />
+        android:text="App Version : " />
+
+
+    <TextView
+        android:id="@+id/ConnectionStatus"
+        android:layout_below="@id/AppVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connection Status : " />
+
+
+    <TextView
+        android:id="@+id/ConnectionType"
+        android:layout_below="@id/ConnectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connection Type :" />
+
 
 
     <TextView
         android:id="@+id/SocketState"
-        android:layout_below="@id/Title"
+        android:layout_below="@id/ConnectionType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Socket Status : " />
-
-
+        android:text="Socket State : " />
 
     <TextView
-        android:id="@+id/DataRate"
+        android:id="@+id/Iteration"
         android:layout_below="@id/SocketState"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DATA Rate : " />
-
+        android:text="Iteration : " />
 
     <TextView
-        android:id="@+id/DataSentOrReceived"
+        android:id="@+id/DataRate"
+        android:layout_below="@id/Iteration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Rate : " />
+
+    <TextView
+        android:id="@+id/DataSentReceived"
         android:layout_below="@id/DataRate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DATA Rate : " />
+        android:text="Data Sent/Received : " />
+
+    <TextView
+        android:id="@+id/AppStatus"
+        android:layout_below="@id/DataSentReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Status : " />
+
+
+
 
 
 </RelativeLayout>
